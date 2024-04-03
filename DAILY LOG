@@ -22,4 +22,32 @@ today i did c but the topic was tough but  i was able to push through and only 2
 
 
 Did nothing today
+#include <stdio.h>
+int main(){
+    int a,b;
+    int *ptra=&a;
+    int *ptrb=&b;
+    printf("Enter your number:- ");
+    scanf("%d",ptra);
+    printf("Enter your number:- ");
+    scanf("%d",ptrb);
+    if(*ptra>*ptrb){
+        printf("%d is the maximum number",*ptra);
+    }else{
+        printf("%d is the maximum number",*ptrb);
+    } return 0;
+}
+#include <stdio.h>
+int main(){
+    char x,y;
+    
+    char *ptr1=&x;
+    char *ptr2=&y;
+    x='A';
+    y='Z';
+    for(*ptr1='A';*ptr1<=*ptr2;(*ptr1)++){
+        printf("%c\n",*ptr1);}
+        return 0;
+    
+}
 
